@@ -4,36 +4,141 @@
     <meta charset="utf-8">
 
     <title>JumpStart</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" type="text/css" href="./resources/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./resource/css/reset.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./resource/css/style.css" />
 
-
-
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700" rel="stylesheet">
 
   </head>
   <body>
 
+<!-- This is the naavbar for site direction -->
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="containere">
-       <ul id="navbar-top">
-         <li class="navbar-top-list" href="">Explore</li>
-         <li class="navbar-top-list" href="">Start a project</li>
-         <li class="navbar-top-list" href="">About us</li>
-       </div>
+      <div class="container-fluid">
+       <ul class="nav navbar-nav">
+         <li class="active"><a href="#">Explore</a></li>
+         <li><a href="#">Start a project</a></li>
+         <li><a href="#">About us</a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+         <li><img src="./resource/images/logo.png" class="navbar-brand navbar-right navbar-collapse" /></li>
+       </ul>
+     </div>
     </nav>
 
+
+<!-- This is the jumbotron design with picture navigation -->
+    <div class="jumbotron jumbotron-bike">
+      <div class="container">
+        <span class="jumbotron-header">Get Going.</span>
+          <p class="jumbotron-text">Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid image-navbar">
+      <div class="row">
+        <div class="jumbotron-image-navbar image-bike col-xs-3">
+          <p class="nav-img-text">GET GOING.</p>
+        </div>
+        <div class="jumbotron-image-navbar col-xs-3">
+          <p class="nav-img-text">GET THINKING.</p>
+        </div>
+        <div class="jumbotron-image-navbar col-xs-3">
+          <p class="nav-img-text">GET CREATIVE.</p>
+        </div>
+        <div class="jumbotron-image-navbar col-xs-3">
+          <p class="nav-img-text">GET STARTED.</p>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Featured Section of Website -->
+    <div class="container featured-project">
+      <div class="row">
+        <h2 class="col-xs-12">Featured Project</h2>
+      </div>
+      <div class="row">
+       <div class="col-xs-12 col-md-6">
+         <div class="image-container">
+           <img src="resource/images/featured-project.png" />
+         </div>
+       </div>
+       <div class="margin col-xs-6 col-md-3">
+          <h3>DeFrost: A Documentary</h3>
+          <p>by Leo De Firenze <br>DeFrost is a documentary about growing up in a little red house in a cold,
+           harsh valley. This is a story about my mother's childhood. This film attempts to capture vignettes
+           of her upbringing â€” her family, friends, pets, and eventual depature from a freezing valley in Northern
+           Italy â€” through beautiful cinematography and narration.</br></p>
+       </div>
+       <div class="margin col-xs-6 col-md-3">
+           <h3>Product Categories</h3>
+            <ul>
+              <li>Art</li>
+              <li>Books</li>
+              <li>Crystals</li>
+              <li>Design</li>
+              <li>Doodles</li>
+              <li>Deedlybobs</li>
+              <li>Farming</li>
+              <li>Gadgets</li>
+              <li>Hoverboards</li>
+              <li>James, Jellies, Etc.</li>
+              <li>Magazines</li>
+              <li>Plants</li>
+              <li>Snakes & Snake Equipment</li>
+              <li>Tables</li>
+              <li>Ventriliquist Figures</li>
+              <li>Yoyos</li>
+            </ul>
+       </div>
+     </div>
+    </div>
+
+<!-- Projects Section -->
+    <div class="container project-section">
+      <div class="row">
+        <h2 class="col-xs-12">Projects</h2>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <div class="image-container">
+            <img src=""/>
+            <h1>The Right Tights</h1>
+            <p>by Riley Mae</p>
+            <p> These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="image-container">
+            <img src=""/>
+            <h1>Peppermint Smart Home</h1>
+            <p>by Brian McDonald</p>
+            <p>Instantly upgrade your home with technology that keeps your family and home safe. We've made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="image-container">
+            <img src=""/>
+            <h1>American Streetlife</h1>
+            <p>by Patrick Wallace</p>
+            <p>I've been traveling around the United States for the past two years. I've slept on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
-    <script src="./resources/js/main.js"></script>
+    <script src="./resource/js/main.js"></script>
 
   </body>
 </html>

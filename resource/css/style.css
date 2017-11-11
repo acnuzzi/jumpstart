@@ -1,2 +1,84 @@
-font-family: 'Monoton', cursive;
-font-family: 'Open Sans', sans-serif;
+/* full Site */
+html {
+  font-size: 14px;
+  font-family: open Sans;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* jumbotron Display */
+.jumbotron {
+  height: 44rem;
+  padding-top: 10rem;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jumbotron-bike {
+  background-image: url("../images/jumbotron-bike.jpg");
+}
+
+span.jumbotron-header {
+  font-family: Monoton;
+  font-size: 7.1rem;
+  color: white;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+}
+
+p.jumbotron-text {
+  width: 51.3rem;
+  color: white;
+  margin: auto;
+}
+
+.jumbotron-image-navbar {
+  border: solid;
+  margin-top: -2.2rem;
+  padding-top: .8rem;
+  height: 3rem;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/jumbotron-bike.jpg");
+}
+
+.nav-img-text {
+  font-family: Monoton;
+  color: white;
+  letter-spacing: 1rem;
+  text-rendering: optimizeLegibility;
+}
+
+img .nav-img {
+  overflow: hidden;
+}
+
+/* Featured Project */
+.featured-project .image-container {
+  height: 19rem;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.margin {
+  margin-top: -20px;
+}
+
+
+
+
+
+
+/* font-family: 'Monoton', cursive;
+font-family: 'Open Sans', sans-serif; */
