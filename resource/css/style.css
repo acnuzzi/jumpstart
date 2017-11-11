@@ -9,6 +9,34 @@ h3 {
   font-weight: bold;
 }
 
+.image-container {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  opacity: .7;
+}
+
+.color-text {
+  color: #399bd1;
+}
+
+.btn-lg {
+  margin-top: 2.8rem;
+  padding: 1.5rem 3rem;
+}
+/* Navigation Bar */
+.navbar-right {
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  ul .nav .navbar-nav .navbar-right {
+    display: none;
+  }
+}
+
 /* jumbotron Display */
 .jumbotron {
   height: 44rem;
@@ -30,8 +58,8 @@ span.jumbotron-header {
   text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
 }
 
-p.jumbotron-text {
-  width: 51.3rem;
+.jumbotron p {
+  max-width: 51.3rem;
   color: white;
   margin: auto;
 }
@@ -54,29 +82,40 @@ p.jumbotron-text {
   text-rendering: optimizeLegibility;
 }
 
-img .nav-img {
-  overflow: hidden;
+/* Featured Project */
+.featured-project {
+  margin-top: 3rem;
 }
 
-/* Featured Project */
 .featured-project .image-container {
   height: 19rem;
-}
-
-.image-container {
-  overflow: hidden;
-}
-
-img {
-  width: 100%;
 }
 
 .margin {
   margin-top: -20px;
 }
 
+/*Projects Section */
+.project-section {
+  margin-bottom: 5.85rem;
+}
 
+/* Footer Section */
+.having-trouble {
+  padding: 5.2rem 0;
+  background-color: #f3f3f3;
+  text-align: center;
+}
 
+strong {
+  font-size: 2.5rem;
+}
+
+.having-trouble-width {
+  margin: 1.4rem;
+  max-width: 42rem;
+  margin: auto;
+}
 
 
 
