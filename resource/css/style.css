@@ -16,6 +16,7 @@ h3 {
 img {
   width: 100%;
   opacity: .7;
+  transition: transform 1s;
 }
 
 .color-text {
@@ -26,19 +27,27 @@ img {
   margin-top: 2.8rem;
   padding: 1.5rem 3rem;
 }
+
+.image-container img:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+
 /* Navigation Bar */
 .navbar-right {
   margin-right: 1rem;
 }
 
-@media only screen and (max-width: 767px) {
-  ul .nav .navbar-nav .navbar-right {
-    display: none;
-  }
+/* jumbotron Display */
+.carousel {
+
 }
 
-/* jumbotron Display */
+
+
 .jumbotron {
+  border: solid;
   height: 44rem;
   padding-top: 10rem;
   text-align: center;
@@ -49,6 +58,18 @@ img {
 
 .jumbotron-bike {
   background-image: url("../images/jumbotron-bike.jpg");
+}
+
+.jumbotron-beer {
+  background-image: url("../images/jumbotron-beer.jpg");
+}
+
+.jumbotron-flower {
+  background-image: url("../images/jumbotron-flowers.jpg");
+}
+
+.jumbotron-duffel {
+  background-image: url("../images/jumbotron-duffel.jpg");
 }
 
 span.jumbotron-header {
@@ -64,27 +85,94 @@ span.jumbotron-header {
   margin: auto;
 }
 
+
+/* Button for Jumbotron */
+.relative-wrapper {
+  position: relative;
+  top: -20rem;
+  width: 100%;
+  text-align: center;
+}
+
+
 .jumbotron-image-navbar {
+  display: flex;
+  text-align: center;
   border: solid;
-  margin-top: -2.2rem;
-  padding-top: .8rem;
-  height: 3rem;
+  border-color: gray;
+  bottom: 5.8rem;
+  padding-top: 0rem;
+  height: 3.4rem;
   text-align: center;
   background-size: cover;
   background-position: center;
+}
+
+.image-bike {
   background-image: url("../images/jumbotron-bike.jpg");
 }
 
+.image-beer {
+  background-image: url("../images/jumbotron-beer.jpg");
+}
+
+.image-flower {
+  background-image: url("../images/jumbotron-flowers.jpg");
+}
+
+.image-duffel {
+  background-image: url("../images/jumbotron-duffel.jpg");
+}
+
+/*
+.slick-dots { position: absolute; bottom: -45px; list-style: none; display: block; text-align: center; padding: 0; width: 100%; }
+.slick-dots li { position: relative; display: inline-block; height: 20px; width: 20px; margin: 0 5px; padding: 0; cursor: pointer; }
+.slick-dots li button { border: 0; background: transparent; display: block; height: 20px; width: 20px; outline: none; line-height: 0; font-size: 0; color: transparent; padding: 5px; cursor: pointer; }
+.slick-dots li button:hover, .slick-dots li button:focus { outline: none; }
+.slick-dots li button:hover:before, .slick-dots li button:focus:before { opacity: 1; }
+.slick-dots li button:before { position: absolute; top: 0; left: 0; content: "0000000"; width: 20px; height: 20px; font-family: "slick"; font-size: 6px; line-height: 5px; text-align: center; color: orange; opacity: 0.25; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.slick-dots li.slick-active button:before { color: black; opacity: 0.75; } */
+
+
+.slick-dots { z-index: 99; position: relative; bottom: 2.2rem; list-style: none; display: flex; text-align: center; margin-top: 0rem; width: 100%;}
+.slick-dots li { position: relative; display: inline-block; height: 0rem; width: 25%; margin-top: 0; padding: 1.6rem; cursor: pointer;}
+.slick-dots li button { border: 0; background: transparent; display: block ; height: 3rem; width: 112.5%; outline: none; line-height: 0; font-size: 0; color: transparent; margin-left: -1.5rem; cursor: pointer; margin-top: -1.5rem;}
+.slick-dots li button:hover, .slick-dots li button:focus { outline: none; }
+.slick-dots li button:hover:before, .slick-dots li button:focus:before { opacity: 0; }
+.slick-dots li button:before { border:0; opacity: 1; background-color: black; content: " "; margin-top: 0rem; padding: 0rem; position: absolute; top: 0; left: 0; width: 100%; height: 100%; font-family: "slick"; font-size: 6px; line-height: 5px; text-align: center; color: black; opacity: 0.35; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.slick-dots li.slick-active button:before { opacity: 0; }
+
+/*
+.content {
+  font-size: 18px;
+  padding: 20px;
+  text-align:center;
+  color: white;
+}
+*/
+.image-navbar {
+  margin-top: -8rem;
+}
+
+
 .nav-img-text {
   font-family: Monoton;
+  padding-bottom: 0rem;
+  margin: auto;
   color: white;
-  letter-spacing: 1rem;
+  letter-spacing: .8rem;
   text-rendering: optimizeLegibility;
+}
+
+@media only screen and (max-width: 767px) {
+  .jumbotron span.jumbotron-header {
+    font-size: 5.7rem;
+  }
 }
 
 /* Featured Project */
 .featured-project {
-  margin-top: 3rem;
+  top: -10rem;
 }
 
 .featured-project .image-container {
@@ -92,7 +180,7 @@ span.jumbotron-header {
 }
 
 .margin {
-  margin-top: -20px;
+  top: -20px;
 }
 
 /*Projects Section */

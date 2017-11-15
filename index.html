@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>JumpStart</title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="./resource/css/reset.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <!--  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/> -->
+    <link rel="stylesheet" type="text/css" href="resource/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./resource/css/style.css" />
 
 
@@ -35,14 +38,42 @@
 
 
 <!-- This is the jumbotron design with picture navigation -->
+
+  <div class="carousel">
     <div class="jumbotron jumbotron-bike">
       <div class="container-fluid">
         <span class="jumbotron-header">Get Going.</span>
           <p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
-          <a href="#" class="btn btn-info btn-lg" role="button">Jump In</a>
       </div>
     </div>
 
+    <div class="jumbotron jumbotron-beer">
+      <div class="container-fluid">
+        <span class="jumbotron-header">Get Thinking.</span>
+          <p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-flower">
+      <div class="container-fluid">
+        <span class="jumbotron-header">Get Creating.</span>
+          <p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-duffel">
+      <div class="container-fluid">
+        <span class="jumbotron-header">Get Started.</span>
+          <p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="relative-wrapper">
+      <a href="#" class="btn btn-info btn-lg" role="button">Jump In</a>
+  </div>
 
 
     <div class="container-fluid image-navbar">
@@ -50,17 +81,18 @@
         <div class="jumbotron-image-navbar image-bike col-xs-3">
           <p class="nav-img-text">GET GOING.</p>
         </div>
-        <div class="jumbotron-image-navbar col-xs-3">
+        <div class="jumbotron-image-navbar image-beer col-xs-3">
           <p class="nav-img-text">GET THINKING.</p>
         </div>
-        <div class="jumbotron-image-navbar col-xs-3">
+        <div class="jumbotron-image-navbar image-flower col-xs-3">
           <p class="nav-img-text">GET CREATING.</p>
         </div>
-        <div class="jumbotron-image-navbar col-xs-3">
+        <div class="jumbotron-image-navbar image-duffel col-xs-3">
           <p class="nav-img-text">GET STARTED.</p>
         </div>
       </div>
     </div>
+
 
 
 <!-- Featured Section of Website -->
@@ -114,26 +146,26 @@
         <div class="col-xs-12 col-md-4">
           <div class="image-container">
             <img src="resource/images/project1.png"/>
-            <h3>The Right Tights</h3>
-            <p>by Riley Mae</p>
-            <p> These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
           </div>
+          <h3>The Right Tights</h3>
+          <p>by Riley Mae</p>
+          <p> These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
         </div>
         <div class="col-xs-12 col-md-4">
           <div class="image-container">
             <img src="resource/images/project2.png"/>
-            <h3>Peppermint Smart Home</h3>
-            <p>by Brian McDonald</p>
-            <p>Instantly upgrade your home with technology that keeps your family and home safe. We've made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
           </div>
+          <h3>Peppermint Smart Home</h3>
+          <p>by Brian McDonald</p>
+          <p>Instantly upgrade your home with technology that keeps your family and home safe. We've made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
         </div>
         <div class="col-xs-12 col-md-4">
           <div class="image-container">
             <img src="resource/images/project3.png"/>
-            <h3>American Streetlife</h3>
-            <p>by Patrick Wallace</p>
-            <p>I've been traveling around the United States for the past two years. I've slept on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album.</p>
           </div>
+          <h3>American Streetlife</h3>
+          <p>by Patrick Wallace</p>
+          <p>I've been traveling around the United States for the past two years. I've slept on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album.</p>
         </div>
       </div>
     </div>
@@ -151,10 +183,9 @@
    </div>
 
 
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
-    <script src="./resource/js/main.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script type="text/javascript" src="resource/slick/slick.min.js"></script>
+   <script src="./resource/js/main.js"></script>
 
   </body>
 </html>
