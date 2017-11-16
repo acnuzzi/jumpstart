@@ -4,6 +4,12 @@ html {
   font-family: open Sans;
 }
 
+body, html {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+}
+
 h3 {
   font-size: 1.3rem;
   font-weight: bold;
@@ -33,10 +39,28 @@ img {
   transform: scale(1.3);
 }
 
+/* slick override */
+
+.slick-slide {
+  outline: none;
+}
+
+/* navbar nevigation */
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: inherit;
+  color: #399bd1;
+}
 
 /* Navigation Bar */
 .navbar-right {
   margin-right: 1rem;
+}
+
+.navbar {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 /* jumbotron Display */
@@ -93,7 +117,6 @@ span.jumbotron-header {
   width: 100%;
   text-align: center;
 }
-
 
 .jumbotron-image-navbar {
   display: flex;

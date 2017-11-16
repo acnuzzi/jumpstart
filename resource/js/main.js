@@ -5,21 +5,24 @@ $(document).ready(function () {
    autoplay: true,
    autoplaySpeed: 4000,
    fade: true,
-   dots: true
+   dots: true,
+   pauseOnHover: false,
+   pauseOnFocus: false
+
+ });
+
+
+
+ var lastScrollTop = 0;
+ $(window).scroll(function(){
+   var scrollTop = $(this).scrollTop();
+   if (scrollTop - lastScrollTop > 50){
+     var navHeight = $('.navbar').css('height');
+     $('.navbar').animate({top: '-' + navHeight}, 150);
+     lastScrollTop = scrollTop;
+   } else if (lastScrollTop - scrollTop > 50) {
+     $('.navbar').animate({top: '0px'}, 150);
+     lastScrollTop = scrollTop;
+   }
  });
 });
-
-/*
-$(document).ready(function() {
- if ($(".carousel").is("jumbotron-bike")) {
-   $(".jumbotron-image-navbar").show({display: none});
- }
- });
-*/
-
-/* $(document).ready(function(){
-    if( $(".carousel").is(".jumbotron-bike")){
-         $(".jumbotron-image-navbar").css("display", "none");
-     });
- });
-*/
