@@ -64,11 +64,10 @@ img {
 }
 
 /* jumbotron Display */
-.carousel {
-
+.fixed {
+  position: fixed;
+  width: 100%;
 }
-
-
 
 .jumbotron {
   border: solid;
@@ -116,6 +115,10 @@ span.jumbotron-header {
   top: -20rem;
   width: 100%;
   text-align: center;
+}
+
+.image-navbar{
+
 }
 
 .jumbotron-image-navbar {
@@ -192,6 +195,28 @@ span.jumbotron-header {
     font-size: 5.7rem;
   }
 }
+
+/*
+.fixed {
+  background-attachment: fixed;
+  position: fixed;
+  width: auto;
+}
+*/
+
+/* video Display */
+
+.homepage-hero-module {
+ position: sticky;
+ top:0;
+}
+
+video, .video-container {
+  background-size: cover;
+  height: 33rem;
+  width: auto;
+}
+
 
 /* Featured Project */
 .featured-project {
